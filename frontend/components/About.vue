@@ -2,11 +2,10 @@
     <v-container class="card-container">
         <v-card
             class="card-about"
-            elevation="2"
         >
         
         <p class="about-title">
-            O QUE É O HUB DASHBOARD
+            O QUE É O HURB DASHBOARD
         </p>
         
         <p class="about-text darkText--text"> 
@@ -31,16 +30,17 @@ export default {
 <style>
     .card-about {
         display:block;
-        margin: 0px; 
+        margin: 10px 10px 0 0; 
         padding: 0px; 
         width: 501px; 
-        height: 450px; 
+        height: 440px; 
         border-radius: 20px!important;
 
         display: flex;
         flex-direction: column; 
         justify-content: flex-start;
         align-items: flex-start;
+        box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.15) !important;
     }
 
     .about-title {

@@ -2,7 +2,6 @@
     <v-container class="card-container">
         <v-card
             class="card"
-            elevation="2"
             :to=link
             router
             exact
@@ -32,7 +31,7 @@ export default {
 <style>
     .card {
         display:block;
-        margin: 0px; 
+        margin: 10px; 
         padding: 0px; 
         width: 200px; 
         height: 200px; 
@@ -42,6 +41,12 @@ export default {
         flex-direction: column; 
         justify-content: center;
         align-items: center;
+
+        box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.15) !important;
+    }
+    .card:hover {
+        transform: scale(1.08);
+        transition: all 0.2s;
     }
 
     p.button-name {
