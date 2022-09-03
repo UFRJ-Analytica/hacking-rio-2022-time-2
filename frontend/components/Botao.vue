@@ -34,8 +34,8 @@ export default {
         display:block;
         margin: 0px; 
         padding: 0px; 
-        width: 226px; 
-        height: 216px; 
+        width: 200px; 
+        height: 200px; 
         border-radius: 20px!important;
 
         display: flex;

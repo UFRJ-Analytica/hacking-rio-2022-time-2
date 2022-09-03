@@ -7,6 +7,12 @@
             Escolha por onde deseja começar
         </p>
     <div class="main">
+
+        <div class="about-container">
+            <About />
+        </div>
+
+    <div class="botoes-container">
         <div>
             <Botao 
                 icon="mdi-chart-bar" 
@@ -36,15 +42,18 @@
             />
         </div>
     </div>
+
+    </div>
     </v-container>
 </template>
 
 <script>
 import Botao from '../components/Botao.vue'
+import About from '../components/About.vue'
 
 export default {
     name: 'Inicio',
-    components: { Botao },
+    components: { Botao, About },
     head() {
         return {
             title: 'Página Inicial',
@@ -62,8 +71,20 @@ export default {
 
 <style>
 .main {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+}
+
+.about-container {
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.botoes-container {
+    padding: 0;
+    margin: 0!important;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
