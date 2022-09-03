@@ -22,10 +22,15 @@
         >
 
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon class="darkText--text">
+              {{ item.icon }}
+            </v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title"/>
+            <v-list-item-title 
+              v-text="item.title"
+              class="darkText--text"
+            />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -126,7 +131,6 @@ h1 {
   font-size: 3.8rem;
   margin-left: 0.38rem;
   letter-spacing: 2px;
-  color: "#3468FC";
 }
 
 h2 {
