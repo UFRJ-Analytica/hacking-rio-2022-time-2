@@ -7,9 +7,19 @@
       fixed
       app
       id="sidebar"
+      class="elevation-2"
     >
 
-    <h1 id="hurb-title" class="primary--text">Hurb</h1>
+  <div class="site-logo">
+      <img 
+        src="/logo_hurb.svg" 
+        alt="Hurb" 
+        :class="{ 'hurb-logo': !miniVariant, 'hurb-logo mini': miniVariant }"
+      />
+      <img 
+        src="/dashboard.svg" alt="Dashboard" class="dashboard" v-if="!miniVariant"
+        />
+  </div>
 
       <v-list>
         <v-list-item
@@ -35,6 +45,14 @@
         </v-list-item>
       </v-list>
 
+    <img 
+      src="/logo_analytica.svg" 
+      alt="UFRJ Analytica" 
+      :class="{ 'team-logo': !miniVariant, 'team-logo mini': miniVariant }"
+    />
+    
+    
+
     </v-navigation-drawer>
 
 
@@ -51,6 +69,7 @@
       >
         <v-icon color="black">mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
+
 
     </v-app-bar>
 
@@ -136,6 +155,7 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: 2.5rem;
+  margin-bottom: -10px;
 }
 
 #header,
@@ -146,7 +166,6 @@ h2 {
 
 #sidebar {
   background-color: #fff!important;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 /* remove a opacidade cinza nos links */
@@ -158,6 +177,42 @@ h2 {
 
 .v-list-item.v-list-item.v-list-item--link.theme--light::before {
   background: none;
+}
+
+.site-logo {
+  margin-bottom: 55px;
+}
+
+.hurb-logo {
+  height: 200px;
+  margin-bottom: -100px;
+  margin-left: 0px;
+}
+
+.hurb-logo.mini {
+  height: 160px;
+  margin-left: -20px;
+}
+
+.dashboard {
+  height: 10px;
+  position: absolute;
+  left: 124px;
+  top: 105px;
+}
+
+.team-logo {
+  height: 40px;
+  position: absolute;
+  bottom: 35px;
+  margin-left: 15%;
+}
+
+.team-logo.mini {
+  height: 45px;
+  position: absolute;
+  bottom: 15px;
+  margin-left: 18%;
 }
 
 </style>
