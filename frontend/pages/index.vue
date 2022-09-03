@@ -1,5 +1,10 @@
 <template>
-    <h2>Início</h2>
+    <div>
+        <h2 class="primary--text">
+            INÍCIO
+        </h2>
+        
+    </div>
 </template>
 
 <script>

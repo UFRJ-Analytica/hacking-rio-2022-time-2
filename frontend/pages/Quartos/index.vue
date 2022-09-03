@@ -1,5 +1,7 @@
 <template>
-    <h2>Quartos</h2>
+    <h2 class="primary--text">
+        QUARTOS
+    </h2>
 </template>
 
 <script>

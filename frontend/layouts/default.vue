@@ -9,7 +9,7 @@
       id="sidebar"
     >
 
-    <h1 id="hurb-title">Hurb</h1>
+    <h1 id="hurb-title" class="primary--text">Hurb</h1>
 
       <v-list>
         <v-list-item
@@ -25,7 +25,7 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-list-item-title v-text="item.title"/>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -42,6 +42,7 @@
       <v-btn
         icon
         @click.stop="miniVariant = !miniVariant"
+        :ripple="false"
       >
         <v-icon color="black">mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
@@ -70,28 +71,27 @@ export default {
       items: [
         {
           icon: 'mdi-home',
-          title: 'Início',
+          title: 'INÍCIO',
           to: '/'
         },
         {
           icon: 'mdi-chart-bar',
-          color:"#000",
-          title: 'Resumo',
+          title: 'RESUMO',
           to: '/resumo'
         },
         {
           icon: 'mdi-umbrella-beach',
-          title: 'Lazer',
+          title: 'LAZER',
           to: '/lazer'
         },
         {
           icon: 'mdi-office-building',
-          title: 'Quartos',
+          title: 'QUARTOS',
           to: '/quartos'
         },
         {
           icon: 'mdi-file',
-          title: 'Relatórios',
+          title: 'RELATÓRIOS',
           to: '/relatorios'
         }
 
@@ -114,7 +114,6 @@ export default {
 @import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,600&display=swap';
 
 * {
-  color: #000;
   opacity: 1!important;
 }
 
@@ -124,14 +123,15 @@ export default {
 
 h1 {
   font-weight: 700;
-  font-size: 3.5rem;
-  margin-left: 0.8rem;
-  color: "#3468FC"!important;
+  font-size: 3.8rem;
+  margin-left: 0.38rem;
+  letter-spacing: 2px;
+  color: "#3468FC";
 }
 
 h2 {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 #header,

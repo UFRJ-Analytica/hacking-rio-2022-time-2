@@ -1,5 +1,7 @@
 <template>
-    <h2>Lazer</h2>
+    <h2 class="primary--text">
+        LAZER
+    </h2>
 </template>
 
 <script>

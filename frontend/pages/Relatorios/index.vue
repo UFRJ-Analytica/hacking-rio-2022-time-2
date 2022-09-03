@@ -1,5 +1,7 @@
 <template>
-    <h2>Relatórios</h2>
+    <h2 class="primary--text">
+        RELATÓRIOS
+    </h2>
 </template>
 
 <script>

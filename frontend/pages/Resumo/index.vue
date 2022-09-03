@@ -1,5 +1,7 @@
 <template>
-    <h2>Resumo</h2>
+    <h2 class="primary--text">
+        RESUMO
+    </h2>
 </template>
 
 <script>
