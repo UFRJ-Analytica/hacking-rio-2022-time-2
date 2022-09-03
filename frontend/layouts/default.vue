@@ -18,6 +18,7 @@
           :to="item.to"
           router
           exact
+          :ripple="false"
         >
 
           <v-list-item-action>
@@ -76,22 +77,22 @@ export default {
           icon: 'mdi-chart-bar',
           color:"#000",
           title: 'Resumo',
-          to: '/'
+          to: '/resumo'
         },
         {
           icon: 'mdi-umbrella-beach',
           title: 'Lazer',
-          to: '/'
+          to: '/lazer'
         },
         {
           icon: 'mdi-office-building',
           title: 'Quartos',
-          to: '/'
+          to: '/quartos'
         },
         {
           icon: 'mdi-file',
           title: 'Relatórios',
-          to: '/'
+          to: '/relatorios'
         }
 
       ],
@@ -149,6 +150,10 @@ h2 {
 .theme--light.v-list-item--active:hover:before, 
 .theme--light.v-list-item:focus:before {
     opacity: 0;
+}
+
+.v-list-item.v-list-item.v-list-item--link.theme--light::before {
+  background: none;
 }
 
 </style>
