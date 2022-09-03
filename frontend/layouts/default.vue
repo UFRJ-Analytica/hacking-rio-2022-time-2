@@ -73,24 +73,25 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Resumo',
-          to: '/resumo'
-        },
-        {
           icon: 'mdi-chart-bar',
+          color:"#000",
+          title: 'Resumo',
+          to: '/'
+        },
+        {
+          icon: 'mdi-umbrella-beach',
           title: 'Lazer',
-          to: '/lazer'
+          to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-office-building',
           title: 'Quartos',
-          to: '/quartos'
+          to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-file',
           title: 'Relatórios',
-          to: '/relatorios'
+          to: '/'
         }
 
       ],
@@ -113,6 +114,7 @@ export default {
 
 * {
   color: #000;
+  opacity: 1!important;
 }
 
 .font {
@@ -148,7 +150,5 @@ h2 {
 .theme--light.v-list-item:focus:before {
     opacity: 0;
 }
-
-
 
 </style>
