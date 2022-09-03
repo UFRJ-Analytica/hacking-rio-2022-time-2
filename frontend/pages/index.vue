@@ -1,9 +1,9 @@
 <template>
     <v-container>
-        <h2 class="primary--text">
+        <h2 class="primary--text pag-title">
             INÍCIO
         </h2>
-        <p class="darkText--text">
+        <p class="darkText--text pag-title">
             Escolha por onde deseja começar
         </p>
     <div class="main">
@@ -74,8 +74,11 @@ export default {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-left: 30px;
 }
-
+.pag-title {
+    margin-left: 40px;
+}
 .about-container {
     padding: 0;
     flex-wrap: wrap;

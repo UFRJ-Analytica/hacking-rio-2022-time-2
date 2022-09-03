@@ -7,7 +7,6 @@
       fixed
       app
       id="sidebar"
-      class="elevation-2"
     >
 
   <div class="site-logo">
@@ -60,7 +59,6 @@
 
     <v-app-bar
       :clipped-left="clipped"
-      fixed
       app
       id="header"
     >
@@ -68,8 +66,9 @@
         icon
         @click.stop="miniVariant = !miniVariant"
         :ripple="false"
+        class="btn"
       >
-        <v-icon color="black">mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
+        <v-icon class="icon" color="#353535">mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
 
 
@@ -160,14 +159,31 @@ h2 {
   margin-bottom: -10px;
 }
 
-#header,
+
 #main {
+  background-color: rgb(253, 253, 253);
   box-shadow: none;
-  background-color: #f4f4f4;
+}
+#header {
+  box-shadow: none;
+  background-color: transparent;
 }
 
 #sidebar {
   background-color: #fff!important;
+  box-shadow: 7px 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 30pt !important;
+}
+.btn {
+  margin-left: 20px !important;
+  margin-top: 30px;
+  background-color: #fff;
+  width: 55px !important;
+  height: 55px !important;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* remove a opacidade cinza nos links */
@@ -188,6 +204,7 @@ h2 {
   margin: auto;
   font-weight: 600;
   letter-spacing: 1px;
+  padding-left: 10px;
 }
 
 .site-logo {
