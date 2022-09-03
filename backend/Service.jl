@@ -6,15 +6,40 @@ Executes Service functions when receive requests
 Models returned from Service functions are mapped into JSONs
 and are returned in the reponse body
 """
-module Resource
+module Service
 
 using HTTP, JSON
+include("EnergyConsumption.jl")
+using .EnergyConsumption
 
 const ROUTER = HTTP.Router()
 parse_request(req) = JSON.parse(String(req.body))
 
 runTest(req) = return parse_request(req)::Dict
-HTTP.@register(ROUTER, "POST", "/forecast", runTest)
+HTTP.@register(ROUTER, "POST", "/test", runTest)
+
+function runPowerFromRoom(req)
+    payload = parse_request(req)
+    occ = payload["occ"]
+    lamps = payload["lamps"]
+    tv = payload["tv"]
+    ac = payload["ac"]
+
+    return PowerFromRoom(occ, lamps, tv, ac)
+end
+HTTP.@register(ROUTER, "POST", "/powerFromRoom", runPowerFromRoom)
+
+function runEnergyConsumptionDaily(req)
+    payload = parse_request(req)
+    occ = payload["occ"]
+    lamps = payload["lamps"]
+    tv = payload["tv"]
+    ac = payload["ac"]
+
+    return EnergyConsumptionDaily(occ, lamps, tv, ac)
+end
+HTTP.@register(ROUTER, "POST", "/energyConsumptionDaily", runEnergyConsumptionDaily)
+
 
 function requestHandler(req)
     try
