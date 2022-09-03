@@ -182,7 +182,7 @@ h2 {
 }
 
 .theme--light.v-list-item--active {
-  background-color: #DDE6FF;
+  background-color: #D5f8e7;
   border-radius: 10px;
   width: 80%;
   margin: auto;
