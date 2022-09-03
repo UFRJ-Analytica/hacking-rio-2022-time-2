@@ -8,16 +8,32 @@
         </p>
     <div class="main">
         <div>
-            <Botao />
+            <Botao 
+                icon="mdi-chart-bar" 
+                name="RESUMO" 
+                link="resumo"
+            />
         </div>
         <div>
-            <Botao />
+            <Botao 
+                icon='mdi-umbrella-beach'
+                name='LAZER'
+                link='lazer'
+            />
         </div>
         <div>
-            <Botao />
+            <Botao 
+                icon='mdi-office-building'
+                name='QUARTOS'
+                link='quartos'
+            />
         </div>
         <div>
-            <Botao />
+            <Botao 
+                icon='mdi-file'
+                name='RELATÓRIOS'
+                link='relatorios'
+            />
         </div>
     </div>
     </v-container>
@@ -29,6 +45,18 @@ import Botao from '../components/Botao.vue'
 export default {
     name: 'Inicio',
     components: { Botao },
+    head() {
+        return {
+            title: 'Página Inicial',
+            meta: [ 
+                {
+                    hid: 'Página inicial do dashboard Hurb para seu hotel',
+                    name: 'Dashboard Hub acompanhar seu hotel',
+                    content: 'Web app inteligente para monitoramento e controle do consumo energético em hotéis. Pode ser usado pelo hoteleiro/dono para manipular luzes e equipamentos, como ar condicionado, em todas as partes do hotel.'
+                }
+            ]
+        }
+    }
 }
 </script>
 

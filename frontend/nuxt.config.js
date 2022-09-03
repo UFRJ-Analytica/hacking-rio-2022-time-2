@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - frontend',
-    title: 'frontend',
+    titleTemplate: '%s',
+    title: '%s',
     htmlAttrs: {
       lang: 'en'
     },
@@ -18,7 +18,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/logo_hurb_min.svg' }
     ]
   },
 
@@ -67,7 +67,8 @@ export default {
           info:"#26a69a",
           warning:"#ffc107",
           error:"#dd2c00",
-          success:"#00e676"
+          success:"#00e676",
+          activebg: "#DDE6FF"
         },
       }
     }

@@ -11,7 +11,19 @@
 
 <script>
 export default {
-    
+    name: 'Relatórios',
+    head() {
+        return {
+            title: 'Relatórios',
+            meta: [ 
+                {
+                    hid: 'Relatórios de consumo energético do Hotel',
+                    name: 'Dashboard Hub acompanhar seu hotel',
+                    content: 'Web app inteligente para monitoramento e controle do consumo energético em hotéis. Pode ser usado pelo hoteleiro/dono para manipular luzes e equipamentos, como ar condicionado, em todas as partes do hotel.'
+                }
+            ]
+        }
+    }
 }
 </script>
 

@@ -22,27 +22,29 @@
   </div>
 
       <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-          :ripple="false"
-        >
+        <v-list-item-group>
+          <v-list-item
+            v-for="(item, i) in items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+            :ripple="false"
+          >
 
-          <v-list-item-action>
-            <v-icon class="darkText--text">
-              {{ item.icon }}
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title 
-              v-text="item.title"
-              class="darkText--text"
-            />
-          </v-list-item-content>
-        </v-list-item>
+            <v-list-item-action>
+              <v-icon class="darkText--text">
+                {{ item.icon }}
+              </v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title 
+                v-text="item.title"
+                class="darkText--text"
+              />
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
       </v-list>
 
     <img 
@@ -101,22 +103,22 @@ export default {
         {
           icon: 'mdi-chart-bar',
           title: 'RESUMO',
-          to: '/resumo'
+          to: 'resumo'
         },
         {
           icon: 'mdi-umbrella-beach',
           title: 'LAZER',
-          to: '/lazer'
+          to: 'lazer'
         },
         {
           icon: 'mdi-office-building',
           title: 'QUARTOS',
-          to: '/quartos'
+          to: 'quartos'
         },
         {
           icon: 'mdi-file',
           title: 'RELATÓRIOS',
-          to: '/relatorios'
+          to: 'relatorios'
         }
 
       ],
@@ -135,7 +137,7 @@ export default {
 
 <style>
 
-@import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap';
 
 * {
   opacity: 1!important;
@@ -177,6 +179,15 @@ h2 {
 
 .v-list-item.v-list-item.v-list-item--link.theme--light::before {
   background: none;
+}
+
+.theme--light.v-list-item--active {
+  background-color: #DDE6FF;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .site-logo {
