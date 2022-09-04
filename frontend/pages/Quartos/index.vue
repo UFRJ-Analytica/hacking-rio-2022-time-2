@@ -75,17 +75,17 @@ export default {
             ]
         }
     },
-    async mounted() {
-        const response = await axios.post('https://ufrjanalytica.loca.lt/energyConsumptionDaily', 
-            {
-             "occ": 10,
-            "lamps": 3,
-            "tv": true,
-            "ac": true
-}
-        )
-        console.log(response)
-    },
+    // async mounted() {
+    //     const response = await axios.post('https://ufrjanalytica.loca.lt/energyConsumptionDaily', 
+    //         {
+    //          "occ": 10,
+    //         "lamps": 3,
+    //         "tv": true,
+    //         "ac": true
+    //     }
+    //     )
+    //     console.log(response)
+    // },
 }
 </script>
 
