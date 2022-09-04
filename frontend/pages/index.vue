@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container class="box">
         <h2 class="primary--text pag-title">
             INÍCIO
         </h2>
@@ -70,11 +70,15 @@ export default {
 </script>
 
 <style>
+.box {
+    margin-left: 120px;
+}
 .main {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 30px;
+    padding-left: 0 !important;
+    margin: 0;
 }
 .pag-title {
     margin-left: 40px;

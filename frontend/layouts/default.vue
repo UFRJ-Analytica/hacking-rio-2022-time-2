@@ -133,6 +133,7 @@ export default {
   }
 }
 </script>
+  
 
 <style>
 
@@ -163,6 +164,7 @@ h2 {
 #main {
   background-color: rgb(253, 253, 253);
   box-shadow: none;
+  margin-left: -120px;
 }
 #header {
   box-shadow: none;
