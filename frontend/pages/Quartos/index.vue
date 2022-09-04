@@ -15,18 +15,18 @@
                 <span class="slider round"></span>
             </label>
             <div class="quartos">
-                <Quarto numero_quarto="101" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="23"/>
-                <Quarto numero_quarto="102" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="23"/>
-                <Quarto numero_quarto="103" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="23"/>
+                <Quarto numero_quarto="101" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
+                <Quarto numero_quarto="102" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
+                <Quarto numero_quarto="103" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
             </div>
         </div>
 
         <div class="andar">
             <p class="nome-andar quarto-title">2º ANDAR</p>
             <div class="quartos">
-                <Quarto numero_quarto="201" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="23"/>
-                <Quarto numero_quarto="202" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="23"/>
-                <Quarto numero_quarto="203" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="23"/>
+                <Quarto numero_quarto="201" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
+                <Quarto numero_quarto="202" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
+                <Quarto numero_quarto="203" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
             </div>
         </div>
 
