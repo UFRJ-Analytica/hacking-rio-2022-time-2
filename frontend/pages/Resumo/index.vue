@@ -1,12 +1,14 @@
 <template>
-    <div>
-        <h2 class="primary--text">
+    <v-container class="box">
+        <h2 class="primary--text pag-title">
             RESUMO
         </h2>
-        <p class="darkText--text">
+        <p class="darkText--text pag-title">
             Aqui está o resumo do consumo energético do hotel
         </p>
+    <div class="main">
     </div>
+    </v-container>
 </template>
 
 <script>
@@ -27,6 +29,13 @@ export default {
 }
 </script>
 
-<style>
 
-</style>
+
+
+
+
+
+
+
+
+

@@ -1,12 +1,14 @@
 <template>
-    <div>
-        <h2 class="primary--text">
+    <v-container class="box">
+        <h2 class="primary--text pag-title">
             RELATÓRIOS
         </h2>
-        <p class="darkText--text">
+        <p class="darkText--text pag-title">
             Aqui estão os relatórios de consumo energético do Hotel
         </p>
+    <div class="main">
     </div>
+    </v-container>
 </template>
 
 <script>

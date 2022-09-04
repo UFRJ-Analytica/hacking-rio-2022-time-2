@@ -1,12 +1,14 @@
 <template>
-    <div>
-        <h2 class="primary--text">
+    <v-container class="box">
+        <h2 class="primary--text pag-title">
             LAZER
         </h2>
-        <p class="darkText--text">
-            Aqui estão as informações de consumo energético e de controle das áreas de lazer
+        <p class="darkText--text pag-title">
+            Aqui estão Informações de consumo energético e de controle das áreas de lazer
         </p>
+    <div class="main">
     </div>
+    </v-container>
 </template>
 
 <script>
