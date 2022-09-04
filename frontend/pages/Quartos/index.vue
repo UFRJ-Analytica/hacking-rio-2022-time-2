@@ -10,10 +10,20 @@
 
         <div class="andar">
             <p class="nome-andar quarto-title">1º ANDAR</p>
+            <span id="l3"><span style="color:#3468FC; font-weight: 600; font-size: 16px;">45 kWh</span> CONSUMO TOTAL</span>
+            
             <label class="switch" id="s1">
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <span class="slider round"></span>
             </label>
+            <span id="l2">LUZES</span>
+
+            <label class="switch" id="s2">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <span id="l1">AR CONDICIONADO</span>
+
             <div class="quartos">
                 <Quarto numero_quarto="101" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
                 <Quarto numero_quarto="102" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
@@ -23,6 +33,19 @@
 
         <div class="andar">
             <p class="nome-andar quarto-title">2º ANDAR</p>
+            <span id="l3"><span style="color:#3468FC; font-weight: 600; font-size: 16px;">45 kWh</span> CONSUMO TOTAL</span>
+            
+            <label class="switch" id="s1">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <span id="l2">LUZES</span>
+
+            <label class="switch" id="s2">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <span id="l1">AR CONDICIONADO</span>
             <div class="quartos">
                 <Quarto numero_quarto="201" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
                 <Quarto numero_quarto="202" pessoas="1" lampadas="1" televisoes="OFF" ar_condicionado="ON" consumo="15"/>
@@ -137,11 +160,11 @@ p.nome-andar {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #3468FC;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #3468FC;
 }
 
 input:checked + .slider:before {
@@ -161,9 +184,39 @@ input:checked + .slider:before {
 
 #s1 {
     position: absolute;
-    left: 250px;
-    bottom: 100px;
+    left: 245px;
+    bottom: 70px;
     z-index: 100;
+    transform: scale(0.8);
+}
+#s2 {
+    position: absolute;
+    left: 245px;
+    bottom: 30px;
+    z-index: 100;
+    transform: scale(0.8);
 }
 
+#l1 {
+    display: inline-block;
+    position: absolute;
+    bottom: 39px;
+    left: 310px;
+    font-size: 12px;
+}
+
+#l2 {
+    display: inline-block;
+    position: absolute;
+    bottom: 79px;
+    left: 310px;
+    font-size: 12px;
+}
+#l3 {
+    display: inline-block;
+    position: absolute;
+    top: 55px;
+    left: 245px;
+    font-size: 12px;
+}
 </style>
