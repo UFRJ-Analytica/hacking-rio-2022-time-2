@@ -6,14 +6,57 @@
         <p class="darkText--text pag-title">
             Aqui estão Informações de consumo energético e de controle das áreas de lazer
         </p>
-    <div class="main">
+
+    <div class="main-lazer">
+        <div class="rec-container">
+
+            <div class="rec">
+                <Rectangle 
+                    nome="AR DO SALÃO DE JOGOS" 
+                    temperatura="20"
+                    consumo="43"
+                    button='true'
+                />
+            </div>
+
+            <div class="rec">
+                <Rectangle 
+                nome="LUZES SALÃO DE JOGOS" 
+                consumo="43"
+                button='true'
+                />
+            </div>
+
+            <div class="rec">
+                <Rectangle 
+                    nome="AR DA ACADEMIA" 
+                    temperatura="20"
+                    consumo="43"
+                    button='true'
+                />
+            </div>
+
+            <div class="rec">
+                <Rectangle 
+                    nome="LUZES DA ACADEMIA" 
+                    consumo="43"
+                    button='true'
+                />
+
+            </div>
+        </div>
+
+
     </div>
     </v-container>
 </template>
 
 <script>
+import Rectangle from '../../components/Rectangle.vue'
+
 export default {
     name: 'Lazer',
+    components: { Rectangle },
     head() {
         return {
             title: 'Áreas de Lazer',
@@ -30,5 +73,15 @@ export default {
 </script>
 
 <style>
+    .rec-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rec {
+    margin: 1rem;
+    }
+
 
 </style>
