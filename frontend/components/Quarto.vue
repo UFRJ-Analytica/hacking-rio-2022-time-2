@@ -47,12 +47,21 @@
             >
                 mdi-weather-windy
             </v-icon>
-            <p class="qt_ar_condicionado"> {{ ar_condicionado }} ºC </p>
+            <p class="qt_ar_condicionado"> {{ ar_condicionado }} </p>
 
         </div>
 
         
-
+            <img 
+                src="/mini_graph.png" 
+                alt="Graph Example" 
+                class="graph_example"
+            />
+        
+            <div class="consumo black--text">
+               <span class="consumo-value"> {{ consumo }} </span> 
+               <p class="unidade">kWh</p>
+            </div>
         
         </v-card>
     </v-container>
@@ -61,7 +70,7 @@
 <script>
 export default {
     name: 'Quarto',
-    props: ['pessoas', 'lampadas', 'televisoes', 'ar_condicionado', 'numero_quarto']
+    props: ['pessoas', 'lampadas', 'televisoes', 'ar_condicionado', 'numero_quarto', 'consumo']
 }
 </script>
 
@@ -92,6 +101,7 @@ export default {
         margin-top: 20px;
         margin-right: 60%;
         margin-bottom: 5px;
+        z-index: 1;
 
     }
 
@@ -112,6 +122,7 @@ export default {
     .qt_televisoes,
     .qt_ar_condicionado {
         color: #3468FC;
+        z-index: 1;
     }
 
 
@@ -119,6 +130,7 @@ export default {
         margin-right: 10px;
         margin-left: 20px;
         margin-top: -15px;
+        z-index: 1;
     }
 
 
@@ -128,5 +140,29 @@ export default {
 
     .v-card--link:before {
     background: none;
+    }
+
+    img.graph_example {
+        position: absolute;
+        z-index: 0;
+        width: 136px;
+        right: 5px;
+        top: 10px;
+    }
+
+    .consumo {
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+    }
+
+    .consumo-value {
+        font-weight: 700;
+        font-size: 2.2em;
+        letter-spacing: 2px;
+    }
+
+    .unidade {
+        margin-top: -15px;
     }
 </style>
