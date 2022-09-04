@@ -13,22 +13,16 @@
             
             <br/><br/>
 
-            O <span class="hurb-dashboard">hurb Dashboard</span> é um Web app inteligente para monitoramento e controle do consumo energético em hotéis
-            
-            <br/><br/>
-
-            Pode ser usado pelo hoteleiro <br/> /dono para manipular 
+            O <span class="hurb-dashboard">Hurb Dashboard</span> é uma plataforma inteligente para monitoramento e controle do consumo energético em hotéis.
+            Pode ser usado pelo hoteleiro/dono
             <br/>
-            luzes e equipamentos, 
+            para manipular luzes e
+            <br/>equipamentos em todas
             <br/>
-            como ar condicionado, 
+            as partes do hotel,  
             <br/>
-            em todas as partes 
-            <br/>
-            do hotel
-
-            <br/><br/>
-            Reduzindo, assim, 
+            como ar condicionados,
+            <br/>piscinas, etc. A fim de <br/>reduzir o gasto de energia <br/>e, consequentemente, as 
             <br/>
             emissões de carbono!
         </p>
@@ -67,7 +61,7 @@ export default {
         margin: 10px 10px 0 0; 
         padding: 0px; 
         width: 501px; 
-        height: 470px; 
+        height: 440px; 
         border-radius: 20px!important;
 
         display: flex;
@@ -75,6 +69,7 @@ export default {
         justify-content: flex-start;
         align-items: flex-start;
         box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.15) !important;
+        padding: 2rem;
     }
 
     .hurb-dashboard {
@@ -87,8 +82,8 @@ export default {
         font-weight: 700;
         letter-spacing: 1px;
         color: #3468FC;
-        margin: 2rem;
         z-index: 10;
+        margin: 0 !important;
     }
 
     .about-callout {
@@ -97,17 +92,15 @@ export default {
     }
 
     .about-text {
-        margin: 2rem;
-        margin-top: -5px;
         z-index: 10;
     }
 
     .img-about {
-        height: 60%;
+        height: 50%;
         position: absolute;
         z-index: 0;
-        bottom: 10px;
-        right: 0px;
+        bottom: 25px;
+        right: 35px;
         border-radius: 20px;
     }
 
@@ -117,9 +110,9 @@ export default {
 
     .credits {
         position: absolute;
-        right: 20px;
-        font-size: 0.6em;
-        bottom: 20px;
+        left: 2rem;
+        font-size: 0.7em;
+        bottom: 2rem;
     }
 
 </style>
