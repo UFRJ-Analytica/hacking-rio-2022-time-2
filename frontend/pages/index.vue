@@ -79,6 +79,7 @@ export default {
 .about-container {
     padding: 0;
     flex-wrap: wrap;
+    margin-left: 1rem;
 }
 
 .botoes-container {

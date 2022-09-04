@@ -5,7 +5,7 @@
         >
         
         <p class="about-title">
-            O QUE É O HURB DASHBOARD
+            O QUE É O HURB DASHBOARD?
         </p>
         
         <p class="about-text darkText--text"> 
@@ -25,7 +25,7 @@
             <br/>
             em todas as partes 
             <br/>
-            do hotel.
+            do hotel
 
             <br/><br/>
             Reduzindo, assim, 
@@ -42,6 +42,7 @@
         <div class="credits darkText--text">
         <a 
             href="https://www.freepik.com/free-vector/rio-de-janeiro-concept-illustration_11786052.htm#query=rio%20de%20janeiro&position=10&from_view=keyword"
+            target="_blank"
         >
             Image by storyset on Freepik
         </a> 
@@ -116,9 +117,9 @@ export default {
 
     .credits {
         position: absolute;
-        right: 10px;
-        font-size: 0.7em;
-        bottom: 10PX;
+        right: 20px;
+        font-size: 0.6em;
+        bottom: 20px;
     }
 
 </style>
